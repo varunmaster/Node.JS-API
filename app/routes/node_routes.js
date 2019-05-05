@@ -41,6 +41,13 @@ module.exports = function(app, db){
         res.send(contents);
     });
 
+    app.get('/listshows',(req, res) => {
+        const fs = require('fs');
+        const fileLocShow = "C:\\Users\\Administrator\\app\\routes\\showList.txt";
+        const contents = fs.readFileSync(fileLocShow,'utf8');
+        res.send(contents);
+    })
+
     app.get('/status', (req, res) => {
         res.send("We are up and running!");
     });    
