@@ -1,0 +1,5 @@
+1. Copy all files from Node.JS-API folder into C:\Users\Administrator
+2. install node.js from node website
+3. open command line and run the below commands
+    a. npm install nodemon
+    b. npm install -save {all the "dependencies" in the package.json file}
